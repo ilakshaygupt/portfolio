@@ -75,11 +75,3 @@ nav ul li{
 
 
 
-
-/* Display the navigation links when the screen width is above a certain size */
-@media screen and (min-width: 768px) {
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
-}
