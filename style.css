@@ -1,10 +1,85 @@
+/*font-family: 'JetBrains Mono', monospace;*/
+:root{
+    --primary: #a4d4f1;
+    /* --primary: #fcfcfc; */
+    --secondary: #339bff;
+    --tertiary: #d9d6d1;
+    /* --tertiary: #1a1c1d; */
+    --text1: #d9d6d1;
+    /* --text1: #141414; */
+    --text2: #141414;
+}
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+
+
+body{
+    background-color: var(--primary);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color:var(--primary);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
     list-style: none;
-    scroll-behavior: smooth;
+    margin: 0 23px;
+}
+.left{
+    font-size: x-large;
+    color: var(--primary);
+}
+.left a{
+    text-decoration: none;
+    color:white
     
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 23px;
+}
+.firstsection div{
+    /* display: flex; */
+    justify-content: space-around;
+    margin: 23px;
+    font-size: 2.3rem;
+}
+.leftsection{
+    background-color: none;
+    
+}
+.rightsection{
+    height: 300px;
+    width: 400px;
+    
+}
+.roundedimage {
+    border-radius: 50%;
+    height: 270px;
+    width: 270px;
+}
+
+
+.purple{
+    color: #3a7ca6;
+}
+
+
+
+
+
+/* Display the navigation links when the screen width is above a certain size */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
 }
