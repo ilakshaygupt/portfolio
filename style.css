@@ -11,6 +11,7 @@
 }
 *{
     box-sizing: border-box;
+    text-align: center;
 }
 a{
     text-decoration: none;
@@ -92,6 +93,7 @@ body{
     flex-direction: column;
     display: flex;
     text-align: center  ;
+    
 
     /* margin-right: 50px; */
 }
@@ -356,6 +358,9 @@ body{
     }
     .centeredtext{
         font-size: 2.2rem ;
+    }
+    .leftsection{
+        width: 80vw;
     }
     /* Add any specific styles for tablets and desktops here */
 
