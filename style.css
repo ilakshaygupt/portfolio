@@ -52,6 +52,8 @@ nav {
 body{
     background-color: var(--primary);
     color: white;
+    width: max-content;
+    height: max-content;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
