@@ -48,7 +48,7 @@ nav {
     color: white;
     background-color: hotpink;
     transition: background-color 0.3s;
-    margin-left: 1000px;
+    margin-left: 70%;
 }
 
 
@@ -63,21 +63,17 @@ body{
 
 .bottomtext{
     font-size: 2.6rem;
-   
+   width: 56%;
+   text-align: center;
    margin-bottom: 2rem;
 }
 
-.bottomtext-extramargin{
-    font-size: 3.6rem;
-   margin : 1.7rem 0 0;
-   margin-bottom: 4rem;
-}
 
 
 
 
 .icon{
-    justify-content: auto;
+    justify-content: center;
 }
 .imagew{
     height: 60px;
@@ -88,25 +84,15 @@ body{
 
 
 
-.firstsection{
-    
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* margin-bottom: 3rem; */
 
-    
-}
-.firstsection div{
-    
-    justify-content: space-around;
-    
-    font-size: 2.3rem; 
-}
 .leftsection{
     margin-top: 4rem;
     /* background-color: none; */
-    margin-left: 80px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center  ;
+
     /* margin-right: 50px; */
 }
 .rightsection{
@@ -136,6 +122,7 @@ body{
     margin-bottom: 6rem;
     padding: 20px; 
     text-align: center;
+    gap: 2rem;
 
 }
 .centeredtext{
@@ -362,9 +349,13 @@ body{
 }
 
 /* Tablet and desktop styles (applies to screens wider than 767px) */
-@media screen and (max-width: 650px) {
-    .bottomtext-extramargin{
-        font-size: 1.4rem;
+@media screen and (max-width: 680px) {
+    .bottomtext{
+        font-size: 1.6rem;
+        /* margin: 10rem; */
+    }
+    .centeredtext{
+        font-size: 2.2rem ;
     }
     /* Add any specific styles for tablets and desktops here */
 
