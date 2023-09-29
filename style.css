@@ -1,38 +1,52 @@
-/*font-family: 'JetBrains Mono', monospace;*/
+
 :root{
-    --primary: #a4d4f1;
-    /* --primary: #fcfcfc; */
+    --primary: black;
+    
     --secondary: #339bff;
-    --tertiary: #d9d6d1;
-    /* --tertiary: #1a1c1d; */
+    --tertiary: hsl(38, 10%, 84%);
+    
     --text1: #d9d6d1;
-    /* --text1: #141414; */
+    
     --text2: #141414;
 }
+a{
+    text-decoration: none;
+    color:white
+}
 
+/* navbar */
+nav {
 
-ul.horizontal-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: auto;
+    align-items: center;
+    height: 100px;
 }
 
 
-/* Style the list items to display horizontally */
-ul.horizontal-list li {
-    display: inline-block; /* Display list items in a row */
-    margin-right: 10px;
-}
-
-/* Style the LinkedIn icons */
-.icon a img {
-    width: 50px; /* Adjust the size of the LinkedIn icons */
-    height: 50px;
-
-    cursor: pointer;
+.left{
+    margin-left: 75px;
+    font-size: xx-large;
+    color: var(--primary);
+    text-align: left;
+    background-color: hotpink;
+    padding: 10px 20px;
+    border-radius: 20px;
     
 }
 
+
+.right{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    background-color: hotpink;
+    transition: background-color 0.3s;
+    margin-left: 1000px;
+}
 
 
 body{
@@ -41,67 +55,60 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    background-color: var(--primary);
+
+.bottomtext{
+    font-size: 2.6rem;
+   
+   margin-bottom: 2rem;
 }
-.sameline{
-    list-style: circle;
+
+.bottomtext-extramargin{
+    font-size: 2.6rem;
+   margin : 1.7rem 0 0;
+   margin-bottom: 4rem;
 }
 
 
 
-.left{
-    font-size: xx-large;
-    color: var(--primary);
-    
-    
+
+.icon{
+    justify-content: auto;
+}
+.imagew{
+    height: 60px;
+    width: 60px;
 }
 
-.right{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background-color: #3a7ca6;
-    color: white;
-    transition: background-color 0.3s;
-}
-.right a{
-    text-decoration: none;
-    color: white; 
-    font-size: large; 
-}
-.right:hover {
-    background-color: rgb(107, 144, 156); 
-}
-.left a{
-    text-decoration: none;
-    
-    color:white
-    
-}
+
+
+
+
 .firstsection{
+    
     display: flex;
-    justify-content: space-around;
-    margin: 23px;
+    justify-content: space-between;
+    /* margin-bottom: 3rem; */
+
+    
 }
 .firstsection div{
     
     justify-content: space-around;
-    margin: 23px;
-    font-size: 2.3rem;
+    
+    font-size: 2.3rem; */
 }
 .leftsection{
-    background-color: none;
-    
+    margin-top: 4rem;
+    /* background-color: none; */
+    margin-left: 80px;
+    /* margin-right: 50px; */
 }
 .rightsection{
-    height: 300px;
-    width: 400px;
+    margin-top: 14rem;
+    /* height: auto;
+    max-width: auto; */
+
+
     
 }
 .roundedimage {
@@ -112,38 +119,63 @@ nav {
 
 
 .purple{
-    color: #3a7ca6;
+    color: hotpink;
 }
 
 .hobbies-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px; 
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     padding: 20px; 
+    text-align: center;
 
+}
+.centeredtext{
+    text-align: center;
+    font-size: 2.7rem;
+    margin: 3rem 0 0;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px white, 0 0 20px white;
+    }
+    100% {
+        box-shadow: white;
+    }
 }
 .hobby-card {
     flex: 1;
-    min-width: 300px; /* Adjust the minimum width of each card */
-    max-width: 400px; /* Adjust the maximum width of each card */
-    background-color: rgb(107, 144, 156); 
+    min-width: 300px; 
+    max-width: 400px; 
+    background-color: hotpink; 
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
+
 .hobby-card:hover {
-    background-color: var(--secondary);
+    
     transform: translateY(-5px);
-    border-color: #090C72;
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+    animation: glow 1s infinite alternate; 
 }
 .hobby-title {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
     color: black;
+    font-weight: bold;
+}
+.hobby-title2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    color: black;
+    
+
 }
 .hobby-description {
     font-size: 1rem;
@@ -153,7 +185,10 @@ nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    
 }
+
+
 
 
 .programming-websites li, .programming-languages li {
@@ -171,4 +206,65 @@ nav {
     
     color: var(--text2);
     margin-right: 5px;
+
+}
+
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    
+
+  }
+  .imagecard{
+    height: 60px;
+    width: 60px;
+    border-radius: 7px;
+
+    
+  }
+  
+  .project {
+    display: inline-block;
+    width: 33%;
+    padding: 10;
+    background-color: #ffffff70;
+    
+    border-radius: 30px;
+       flex: 1;
+
+
+    
+    
+    padding: 20px;
+    text-align: center;
+
+
+  }
+  
+  
+  .project-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .project:hover .project-description {
+    opacity: 1;
+    
+  }
+  .smalltext{
+    font-size: xx-large;
+    align-content: center;
+
+  }
+.smallesttext{
+    margin-top: 2rem;
+    font-size: x-large;
+    align-content: center;
 }
