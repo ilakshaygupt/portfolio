@@ -11,33 +11,76 @@
 }
 
 
+ul.horizontal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Style the list items to display horizontally */
+ul.horizontal-list li {
+    display: inline-block; /* Display list items in a row */
+    margin-right: 10px;
+}
+
+/* Style the LinkedIn icons */
+.icon a img {
+    width: 50px; /* Adjust the size of the LinkedIn icons */
+    height: 50px;
+
+    cursor: pointer;
+    
+}
+
+
 
 body{
     background-color: var(--primary);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    background-color:var(--primary);
+    background-color: var(--primary);
 }
-nav ul{
-    display: flex;
-    justify-content: center;
+.sameline{
+    list-style: circle;
 }
-nav ul li{
-    list-style: none;
-    margin: 0 23px;
-}
+
+
+
 .left{
-    font-size: x-large;
+    font-size: xx-large;
     color: var(--primary);
+    
+    
+}
+
+.right{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #3a7ca6;
+    color: white;
+    transition: background-color 0.3s;
+}
+.right a{
+    text-decoration: none;
+    color: white; 
+    font-size: large; 
+}
+.right:hover {
+    background-color: rgb(107, 144, 156); 
 }
 .left a{
     text-decoration: none;
+    
     color:white
     
 }
@@ -47,7 +90,7 @@ nav ul li{
     margin: 23px;
 }
 .firstsection div{
-    /* display: flex; */
+    
     justify-content: space-around;
     margin: 23px;
     font-size: 2.3rem;
@@ -72,6 +115,60 @@ nav ul li{
     color: #3a7ca6;
 }
 
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+    padding: 20px; 
+
+}
+.hobby-card {
+    flex: 1;
+    min-width: 300px; /* Adjust the minimum width of each card */
+    max-width: 400px; /* Adjust the maximum width of each card */
+    background-color: rgb(107, 144, 156); 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.hobby-card:hover {
+    background-color: var(--secondary);
+    transform: translateY(-5px);
+    border-color: #090C72;
+}
+.hobby-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: black;
+}
+.hobby-description {
+    font-size: 1rem;
+}
+
+.programming-websites, .programming-languages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
 
+.programming-websites li, .programming-languages li {
+    margin: 5px 0;
+}
 
+
+.programming-websites li a, .programming-languages li a {
+    text-decoration: none;
+    color: rgb(17, 22, 23);
+}
+
+
+.programming-websites li::before, .programming-languages li::before {
+    
+    color: var(--text2);
+    margin-right: 5px;
+}
