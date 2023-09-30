@@ -80,6 +80,7 @@ body{
     padding: 20px; 
     text-align: center;
     gap: 2rem;
+    
 
 }
 
@@ -91,6 +92,7 @@ body{
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    align-items: center;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s; 
 }
@@ -105,12 +107,13 @@ body{
     margin-bottom: 10px;
     color: black;
     font-weight: bold;
+
 }
 .card-title2{
     font-size: 1.7rem;
     margin-bottom: 10px;
     color: black;
-    
+    align-items: center;
 
 }
 .card-description {
@@ -215,6 +218,12 @@ a{
 
 }
 /* end commons */
+.gitlink{
+    text-decoration: none;
+    /* color: #141414; */
+    font-size: x-large;
+    
+}
 
 
 
@@ -231,6 +240,7 @@ a{
 
   
 
+
     .leftsection {
         margin-top: 2rem; 
         margin-left: 20px; 
@@ -242,11 +252,13 @@ a{
         margin-top: 2rem; 
         align-items: center;
         gap: 10vh;
+
     }
     
     .card {
         min-width: 60vw;
         min-height: 30vh;
+        align-items: center;
     }
 }
 
@@ -255,6 +267,13 @@ a{
     .bottomtext{
         font-size: 1.6rem;
         
+    }
+    .card-title{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+        color: black;
+        font-weight: bold;
+
     }
     .centeredtext{
         font-size: 2.2rem ;
